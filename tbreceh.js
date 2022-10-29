@@ -6,4 +6,5 @@ const params = {
 const url = = new URL("https://api.sheetson.com/v2/sheets/tbreceh");
 Object.keys(params).forEach(key => url.searchParams.append(key, encodeURIComponent(params[key])));
 fetch(url).then(r => r.json())
-  .then(result => console.log(result))
+  .then(result => console.log("object: %O", obj))
+
